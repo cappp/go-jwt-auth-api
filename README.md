@@ -36,7 +36,6 @@ curl -c cookies.txt -b cookies.txt -d '{"name": "x", "username": "y", "password"
 ```sh
 curl -c cookies.txt -b cookies.txt -X GET http://localhost:3000/logout
 ```
-```
 - Private (rota privada para usuários autentificados):
 ```sh
 curl -c cookies.txt -b cookies.txt -X GET http://localhost:3000/private
