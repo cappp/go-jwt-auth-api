@@ -33,8 +33,8 @@ func Signup(ctx *gin.Context) {
 	case sql.ErrNoRows:
 		break
 	case nil:
-		ctx.JSON(http.StatusBadRequest, gin.H{
-			"status":   http.StatusBadRequest,
+		ctx.JSON(http.StatusUnauthorized, gin.H{
+			"status":   http.StatusUnauthorized,
 			"mensagem": "Já tem esse username aí rapaz!",
 		})
 		return
