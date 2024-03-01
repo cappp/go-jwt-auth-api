@@ -10,7 +10,7 @@ func Home(ctx *gin.Context) {
 	if _, err := ctx.Cookie("Authorization"); err != nil {
 		ctx.JSON(http.StatusOK, gin.H{
 			"status":   http.StatusOK,
-			"mensagem": "E ai piva. Você não tá autenticado.",
+			"mensagem": "E aí piva. Você não tá autenticado.",
 		})
 		return
 	}
