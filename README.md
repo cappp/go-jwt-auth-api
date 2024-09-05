@@ -24,21 +24,25 @@ Acesse: [http://localhost:3000](http://localhost:3000) para ver a página inicia
 ```sh
 curl -c cookies.txt -b cookies.txt -X GET http://localhost:3000/
 ```
+
 - Private (rota privada para usuários autenticados):
 ```sh
 curl -c cookies.txt -b cookies.txt -X GET http://localhost:3000/private
 ```
-- Logout (sair):
-```sh
-curl -c cookies.txt -b cookies.txt -X GET http://localhost:3000/logout
-```
+
 - Login (entrar):
 ```sh
 curl -c cookies.txt -b cookies.txt -d '{"username": "abc", "password": "def"}' -X POST http://localhost:3000/login
 ```
+
 - Signup (cadastrar):
 ```sh
 curl -c cookies.txt -b cookies.txt -d '{"name": "x", "username": "y", "password": "z"}' -X POST http://localhost:3000/signup
+```
+
+- Logout (sair):
+```sh
+curl -c cookies.txt -b cookies.txt -X GET http://localhost:3000/logout
 ```
 
 > OBS: todas as mensagens da API estão em baianês.
