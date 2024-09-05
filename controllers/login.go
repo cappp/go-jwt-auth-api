@@ -95,6 +95,6 @@ func Login(ctx *gin.Context) {
 	ctx.SetCookie("Authorization", jwtTokenString, 3600*24*30, "", "", false, true)
 	ctx.JSON(http.StatusOK, gin.H{
 		"status":   http.StatusOK,
-		"mensagem": "Você foi logado com sucesso!",
+		"mensagem": "Você foi autenticado com sucesso!",
 	})
 }
