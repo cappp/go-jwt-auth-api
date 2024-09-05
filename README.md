@@ -24,15 +24,15 @@ Acesse: [http://localhost:3000](http://localhost:3000) para ver a página inicia
 ```sh
 curl -c cookies.txt -b cookies.txt -X GET http://localhost:3000/
 ```
-- Private (rota privada para usuários autentificados):
+- Private (rota privada para usuários autenticados):
 ```sh
 curl -c cookies.txt -b cookies.txt -X GET http://localhost:3000/private
 ```
-- Logout (deslogar):
+- Logout (sair):
 ```sh
 curl -c cookies.txt -b cookies.txt -X GET http://localhost:3000/logout
 ```
-- Login:
+- Login (entrar):
 ```sh
 curl -c cookies.txt -b cookies.txt -d '{"username": "abc", "password": "def"}' -X POST http://localhost:3000/login
 ```
