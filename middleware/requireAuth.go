@@ -15,7 +15,7 @@ func RequireAuth(ctx *gin.Context) {
 	if err != nil {
 		ctx.JSON(http.StatusUnauthorized, gin.H{
 			"status":   http.StatusUnauthorized,
-			"mensagem": "Você precisa se logar para entrar aqui.",
+			"mensagem": "Você precisa estar autenticado para entrar aqui.",
 		})
 		ctx.AbortWithStatus(http.StatusUnauthorized)
 		return
