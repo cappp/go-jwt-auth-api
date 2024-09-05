@@ -16,7 +16,7 @@ Agora execute o projeto:
 go run .
 ```
 
-Acesse: [http://localhost:3000](http://localhost:3000) para ver a página inicial.
+Acesse [http://localhost:3000](http://localhost:3000) para ver a página inicial.
 
 ###### Fazendo chamadas a API
 
